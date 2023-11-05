@@ -1,4 +1,4 @@
-import Encryption from "@/components/main/Encryption";
+import MusiCard from "@/components/main/FavMusic";
 import Hero from "@/components/main/Hero";
 import Projects from "@/components/main/Projects";
 import Skills from "@/components/main/Skills";
@@ -10,7 +10,7 @@ export default function Home() {
       <div className="flex flex-col gap-20">
         <Hero />
         <Skills />
-        
+        <MusiCard />
         <Projects />
       </div>
     </main>
