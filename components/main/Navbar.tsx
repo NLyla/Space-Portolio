@@ -1,8 +1,14 @@
 import { Socials } from "@/constants";
 import Image from "next/image";
 import React from "react";
+import fetch from "node-fetch";
 
-const Navbar = () => {
+
+
+const Navbar = async () => {
+  let response = await fetch("https://kukii-bot.glitch.me/user/626413361185292321")
+  let data = await data.json()
+  
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
@@ -11,15 +17,15 @@ const Navbar = () => {
           className="h-auto w-auto flex flex-row items-center"
         >
           <Image
-            src="/NavLogo.png"
-            alt="logo"
+            src={data.avatar}
+            alt={data.name}
             width={70}
             height={70}
             className="cursor-pointer hover:animate-slowspin"
           />
 
           <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            WebChain Dev
+            {data.name}
           </span>
         </a>
 
