@@ -1,7 +1,6 @@
 import Hero from "@/components/main/Hero";
 import Projects from "@/components/main/Projects";
 import Skills from "@/components/main/Skills";
-import DefaultProgressBar from "@/components/main/ProgressBar";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,7 +9,6 @@ export default function Home() {
       <div className="flex flex-col gap-20">
         <Hero />
         <Skills />
-        <DefaultProgressBar/>
         <Projects />
       </div>
     </main>
