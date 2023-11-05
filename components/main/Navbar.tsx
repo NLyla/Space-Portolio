@@ -12,15 +12,15 @@ const Navbar = () => {
           className="h-auto w-auto flex flex-row items-center"
         >
           <Image
-            src={data.avatar}
-            alt={data.name}
-            width={70}
-            height={70}
+            src="/20231105_122507.png"
+            alt="logo"
+            width={80}
+            height={80}
             className="cursor-pointer hover:animate-slowspin"
           />
 
           <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            {data.name}
+            DRNK-28
           </span>
         </a>
 
