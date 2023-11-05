@@ -1,7 +1,7 @@
 import Hero from "@/components/main/Hero";
 import Projects from "@/components/main/Projects";
 import Skills from "@/components/main/Skills";
-import DefaultProgressBar from "@/components/ProgressBar";
+import DefaultProgressBar from "@/components/main/ProgressBar";
 import Image from "next/image";
 
 export default function Home() {
