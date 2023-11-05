@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-
+import { CProgress } from '@coreui/react';
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 import Image from "next/image";
@@ -47,6 +47,10 @@ const Encryption = () => {
       <div className="absolute z-[20] bottom-[10px] px-[5px]">
         <div className="cursive text-[20px] font-medium text-center text-gray-300">
           Secure your data with end-to-end encryption
+          <CProgress color="success" variant="striped" animated value={25} />
+            <CProgress color="info" variant="striped" animated value={50} />
+            <CProgress color="warning" variant="striped" animated value={75} />
+            <CProgress color="danger" variant="striped" animated value={100} />
         </div>
       </div>
 
