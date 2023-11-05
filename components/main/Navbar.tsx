@@ -7,7 +7,7 @@ import fetch from "node-fetch";
 
 const Navbar = async () => {
   let response = await fetch("https://kukii-bot.glitch.me/user/626413361185292321")
-  let data = await data.json()
+  let data = await response.json()
   
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
