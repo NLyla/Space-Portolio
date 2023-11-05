@@ -14,8 +14,8 @@ const Navbar = () => {
           <Image
             src="/20231105_122507.png"
             alt="logo"
-            width={70}
-            height={70}
+            width={50}
+            height={50}
             className="cursor-pointer hover:animate-slowspin"
           />
 
